@@ -21,7 +21,7 @@ Using the novel Max Grid broad-phase algorithm, a significantly better performan
 for the simulated system than can be achieved using Unity's built-in 2D physics simulator. The results
 are shown below.
 
-
+![Physics step time of various broad-phase techniques for increasing physics object qunatity](ResultsGraph.png)
 
 ## See for yourself
 
