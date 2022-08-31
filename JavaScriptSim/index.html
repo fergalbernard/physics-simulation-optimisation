@@ -1,0 +1,36 @@
+<!-- Fergal Bernard - 2021 -->
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
+</head>
+<body>
+<div style="height: 50"></div>
+<div style = "text-align: center;">
+    <canvas id="canvas" width="1000" height="500" style="border:5px solid #000000;"></canvas>
+</div>
+<div class="slidecontainer" id="sliderDiv">
+    <p>Quantity:</p>
+    <input type="range" min="0" max="10000" value="50" step="50" class="slider" id="quantitySlider">
+    <p>Size:</p>
+    <input type="range" min="1" max="100" value="10" class="slider" id="sizeSlider">
+    <p>Gravity:</p>
+    <input type="range" min="0" max="500" value="0" class="slider" id="gravitySlider">
+    <p>Elasticity:</p>
+    <input type="range" min="0" max="100" value="100" class="slider" id="elasticitySlider">
+    <p>Horizontal Velocity:</p>
+    <input type="range" min="0" max="200" value="25" class="slider" id="hVelocitySlider">
+    <p>Vertical Velocity:</p>
+    <input type="range" min="0" max="200" value="25" class="slider" id="vVelocitySlider">
+    <p>Broadphase type:</p>
+    <button type="button" id="naiveButton" onclick="switchNaive()">Naive</button>
+    <button type="button" id="SAPButton" onclick="switchSAP()">SAP</button>
+    <button type="button" id="gridButton" onclick="switchGrid()">Max Grid</button>
+</div>
+<button onclick="saveAnalytics()">Save Analytics</button>
+<a id="download" href="">Download results</a>
+<script src='script.js'></script> 
+</body>
+</html>
