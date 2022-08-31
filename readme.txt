@@ -1,5 +1,3 @@
-Please do not alter the directory structure of this directory.
-
 The JavaScript simulation can be run by opening index.html (in the JavaScriptSim directory) in any browser.
 It does not require a local server to be started.
 
